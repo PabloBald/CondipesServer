@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url(./OpenSans-SemiBold.ttf);
+}
+
+
+*{
+    margin: 0;
+    font-family: 'Open Sans';
+}
+
+h1{
+    font-weight: 900;
+}
+
+ tr{
+    text-align: center;
+    text-shadow: 1px 1px black;
+}
+tr:nth-child(odd){
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
+tr:nth-child(even){
+    border-bottom: 1px solid white;
+}
+
+.table-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid red;
+}
+
+button{
+    width: 6em;
+    height: 6rem;
+    position: absolute;
+    top:50%;
+    left: 70%;
+    background-color: black;
+    color: white;
+    border: 0;
+    border-radius: 4%;
+    font-size: 2rem;
+    box-shadow: 2px 2px black;
+} 
+
+button:hover{
+    background-color: white;
+    color: black;
+    transition: all .4s ease-in-out;
+    box-shadow: 2px 2px black;
+}
