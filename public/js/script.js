@@ -379,8 +379,6 @@ agregarTabla(25,6);
   boton.innerHTML = "Calcular";
   boton.id = "botoncinho";
   
-  
-
   boton.addEventListener("mousedown", function(){
     
     for (var i = 0; i < ids.length; i++) {
@@ -401,8 +399,6 @@ agregarTabla(25,6);
       var mazul =azul[i];
       var mvioleta =violeta[i];
       
-
-
 function operacion(multi,colorColumna){
         
         colorColumna.innerHTML = Math.round(valoresIn*multi);
@@ -428,8 +424,6 @@ function operacion(multi,colorColumna){
       }   
 }
 
-
-      
     operacion(mrojos,colR);
     operacion(mamarillos,colAm);
     operacion(mazul,colAz);

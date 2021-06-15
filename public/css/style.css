@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Open Sans';
-    src: url(./OpenSans-SemiBold.ttf);
+    src: url(./fonts/OpenSans-SemiBold.ttf);
 }
 
 
@@ -24,11 +24,6 @@ tr:nth-child(even){
     border-bottom: 1px solid white;
 }
 
-.table-wrapper{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    border: 1px solid red;
-}
 
 button{
     width: 6em;
