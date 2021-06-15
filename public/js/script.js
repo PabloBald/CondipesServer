@@ -465,7 +465,7 @@ selectEquipo.addEventListener('input',()=>{
 let equipo = selectEquipo.value;
 var data = {equipo}
 
-fetch('http://localhost:9000/jugadores',{
+fetch('http://localhost:9000/equipos/jugadores',{
   method:'POST',
   headers:{
     'Content-Type': 'application/json'
@@ -486,7 +486,7 @@ selectJugadores.addEventListener('input',()=>{
   let jugador = selectJugadores.value;
   let equipo = selectEquipo.value;
   var data = {equipo,jugador}
-  fetch('http://localhost:9000/jugadores/stats',{
+  fetch('http://localhost:9000/equipos/jugadores/atributos',{
     method:'POST',
     headers:{
       'Content-Type': 'application/json'
@@ -495,7 +495,6 @@ selectJugadores.addEventListener('input',()=>{
   })
   .then(res=>res.json())
   .then(data=>{
-    
     for (let index = 0; index < ids.length; index++) {
       let inputs = document.getElementById(`${ids[index]}in`)
       inputs.value = Object.values(data)[index]
@@ -503,8 +502,6 @@ selectJugadores.addEventListener('input',()=>{
     }
 )
 })
-
-
 
 crearBoton();
 estilarBody();
