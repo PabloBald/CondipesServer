@@ -13,10 +13,9 @@ app.use(bodyParser.urlencoded({
 ////////////////////////////////////////////////
 
 //Rutas
-const teamControllersRoutes = require("./routes/teamRoutes")
-app.get('/equipos',teamControllersRoutes)
-app.post('/equipos/jugadores',teamControllersRoutes)
-app.post('/equipos/jugadores/atributos',teamControllersRoutes)
+const teamRoutes = require("./routes/teamRoutes")
+app.use('/equipos',teamRoutes)
+
 app.get('*',(req,res)=>{
   res.send('<h1>Oops parece que te haz perdido!</h1> <h2>Clickea aqui para regresar al <a href="/">inicio</a></h2>'
   );
