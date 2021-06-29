@@ -1,3 +1,4 @@
+require('dotenv').config();
 ///////////////////////////////////////////////
 const express = require('express');
 const app = express()
@@ -11,7 +12,6 @@ app.use(bodyParser.urlencoded({
   extended : false
 }))
 ////////////////////////////////////////////////
-
 //Rutas
 const teamRoutes = require("./routes/teamRoutes")
 app.use('/equipos',teamRoutes)
